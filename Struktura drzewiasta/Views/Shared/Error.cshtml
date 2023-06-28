@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Error";
+}
+<button style="margin-right: 15px" type="button" class="btn btn-secondary" onclick="goBack()">Wstecz</button>
+<div class="text-center">
+    <h1>Błąd</h1>
+    <p>Napotkano błąd: @ViewBag.ErrorMessage</p>
+    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+    {
+        <div>@error.ErrorMessage</div>
+    }
+</div>

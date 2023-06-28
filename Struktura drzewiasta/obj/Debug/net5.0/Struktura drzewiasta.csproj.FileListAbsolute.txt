@@ -1,0 +1,82 @@
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\appsettings.Development.json
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\appsettings.json
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Struktura drzewiasta.exe
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Struktura drzewiasta.deps.json
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Struktura drzewiasta.runtimeconfig.json
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Struktura drzewiasta.runtimeconfig.dev.json
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Struktura drzewiasta.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\ref\Struktura drzewiasta.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Struktura drzewiasta.pdb
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Struktura drzewiasta.Views.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Struktura drzewiasta.Views.pdb
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\AutoMapper.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Humanizer.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\Newtonsoft.Json.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.csproj.AssemblyReference.cache
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.GeneratedMSBuildEditorConfig.editorconfig
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.AssemblyInfoInputs.cache
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.AssemblyInfo.cs
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.csproj.CoreCompileInputs.cache
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.MvcApplicationPartsAssemblyInfo.cache
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.RazorAssemblyInfo.cache
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.RazorAssemblyInfo.cs
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\staticwebassets\Struktura drzewiasta.StaticWebAssets.Manifest.cache
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\staticwebassets\Struktura drzewiasta.StaticWebAssets.xml
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\scopedcss\bundle\Struktura drzewiasta.styles.css
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.TagHelpers.input.cache
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.TagHelpers.output.cache
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.RazorCoreGenerate.cache
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Razor\Views\Shared\_TreeNode.cshtml.g.cs
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Razor\Views\Treenode\Create.cshtml.g.cs
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Razor\Views\Treenode\Index.cshtml.g.cs
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.RazorTargetAssemblyInfo.cache
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.RazorTargetAssemblyInfo.cs
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.Views.pdb
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.csproj.CopyComplete
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\ref\Struktura drzewiasta.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.pdb
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Struktura drzewiasta.genruntimeconfig.cache
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\FluentValidation.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+F:\Programowanie\Struktura drzewiasta\Struktura drzewiasta\obj\Debug\net5.0\Razor\Views\TreeNode\Edit.cshtml.g.cs

@@ -1,0 +1,23 @@
+﻿@model List<TreeNode>
+
+<ul class="custom-list">
+    @foreach (var node in Model)
+    {
+        <li class="collapsed">
+            <span class="tree-node" onclick="showChildren(this)" oncontextmenu="showContextMenu(event)" data-node-id="@node.Id" draggable="true">
+                <i class="fas fa-solid fa-folder"></i>@node.Name
+                <span class="context-menu">
+                    <button onclick="location.href='@Url.Action("Edit", new { id = node.Id })'" class="btn btn-primary">Edytuj</button>
+                    <button onclick="if(confirm('Czy na pewno chcesz usunąć?')) { location.href='@Url.Action("Delete", new { id = node.Id })' }" class="btn btn-danger">Usuń</button>
+                    <button onclick="location.href='@Url.Action("Move", new { id = node.Id })'" class="btn btn-secondary">Przenieś</button>
+                </span>
+            </span>
+            @if (node.Children.Count > 0)
+            {
+                @await Html.PartialAsync("_TreeNode", node.Children)
+            }
+        </li>
+    }
+</ul>
+
+

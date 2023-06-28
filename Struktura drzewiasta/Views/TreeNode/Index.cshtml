@@ -1,0 +1,48 @@
+﻿@model List<TreeNode>
+@{
+    ViewData["Title"] = "Tree";
+}
+
+<h2>Widok drzewa</h2>
+<div class="button-container">
+    <button class="btn" id="toggleButton" onclick="toggleAllNodes()">Rozwiń wszystkie</button>
+    @Html.ActionLink("Odwróć kierunek sortowania", "Reverse", "TreeNode", null, new { @class = "btn my-button" })
+    @Html.ActionLink("Dodaj węzeł", "Create", "TreeNode", null, new { @class = "btn my-button" })
+</div>
+<div class="tree-container">
+    <div class="tree">
+        <ul class="custom-list" id="tree-structure">
+            @foreach (var node in Model)
+            {
+                if (node.ParentId == null) // Węzeł na pierwszym poziomie
+                {
+                    <li class="collapsed">
+                        <span class="tree-node" onclick="showChildren(this)" data-node-id="@node.Id" >
+                            <i class="fas fa-solid fa-folder"></i> @node.Name
+                        </span>
+                        @if (node.Children.Count > 0)
+                        {
+                            @await Html.PartialAsync("_TreeNode", node.Children)// Przekaż dzieci węzła do częsciowego widoku wywoływanego rekurencyjnie
+                        }
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+</div>
+<div id="context-menu" class="context-menu text-center">
+    <div class="context-menu-item">
+        <a onclick="createNode(event)" class="context-menu-link">Dodaj</a>
+    </div>
+    <div class="context-menu-item">
+        <a onclick="editNode(event)" class="context-menu-link">Edytuj</a>
+    </div>
+    <div class="context-menu-item">
+        <a onclick="deleteNode(event)" class="context-menu-link">Usuń</a>
+    </div>
+</div>
+
+
+
+
+

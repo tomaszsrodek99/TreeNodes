@@ -1,0 +1,84 @@
+﻿.tree {
+    margin-top: 15px;
+}
+
+container {
+    margin-top: 200px;
+}
+
+.tree li {
+    background: #dbeaff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.tree ul {
+    background: white;
+    padding-top: 1px;
+}
+
+ul.custom-list {
+    list-style-type: none;
+}
+
+.tree-node {
+    border-radius: 5px;
+    color: #3a68b6;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.tree-node:hover {
+    cursor: pointer;
+}
+
+.context-menu {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    z-index: 999;
+}
+
+.context-menu-item {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+
+.context-menu-item :last-child {
+    border-bottom: none;
+}
+
+.context-menu-item:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.context-menu-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.button-container button, .my-button {
+    background-color: #1b2029;
+    color: white;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.collapsed ul {
+    display: none;
+}
+
+.drag-over {
+    background-color: lightblue;
+}
+
+.tree-node.drag-over {
+    border: 2px dashed blue;
+}
+
+
+
