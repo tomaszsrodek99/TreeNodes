@@ -1,7 +1,6 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,10 +9,6 @@ using Struktura_drzewiasta.Context;
 using Struktura_drzewiasta.Dtos;
 using Struktura_drzewiasta.Models;
 using Struktura_drzewiasta.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Struktura_drzewiasta
 {
@@ -82,7 +77,6 @@ namespace Struktura_drzewiasta
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=TreeNode}/{action=Index}/{id?}");
-
             });
         }
     }

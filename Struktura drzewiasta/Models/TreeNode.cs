@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Struktura_drzewiasta.Models
 {
     public class TreeNode
     {
-        public int Id { get; set; } 
-        public string Name { get; set; } 
+        public int Id { get; set; }
+        public string Name { get; set; }
         public int? ParentId { get; set; } // Identyfikator węzła-rodzica (może być null)
         public TreeNode Parent { get; set; } // Referencja do węzła-rodzica
         public List<TreeNode> Children { get; set; } // Lista dzieci węzła
-        public TreeNode() 
+        public TreeNode()
         {
             Children = new List<TreeNode>();
         }
@@ -22,6 +19,6 @@ namespace Struktura_drzewiasta.Models
             Name = name;
             ParentId = parentId;
             Children = new List<TreeNode>();
-        }       
-    }       
+        }
+    }
 }

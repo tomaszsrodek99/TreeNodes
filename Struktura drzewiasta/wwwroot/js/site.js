@@ -11,11 +11,13 @@ function showChildren(element) {
     }
 }
 
-function toggleAllNodes() {
+function toggleAllNodes(button) {
     var nodes = document.getElementsByClassName("tree-node"); // Pobierz wszystkie elementy o klasie "tree-node"
     var toggleButton = document.querySelector("button");
+    var iElement = document.getElementById("folderImg")
+    var toggleText = button.querySelector(".toggle-text");
 
-    var isExpandAll = toggleButton.textContent === "Rozwiń wszystkie";
+    var isExpandAll = toggleButton.textContent.trim() === "Rozwiń wszystkie";
 
     for (var i = 0; i < nodes.length; i++) { // Dla każdego elementu
         var parentLi = nodes[i].parentNode; // Pobierz rodzica li
@@ -29,13 +31,18 @@ function toggleAllNodes() {
             }
         }
     }
-
     if (isExpandAll) {
-        toggleButton.textContent = "Schowaj wszystkie";
+        toggleText.textContent = "Schowaj wszystkie";
+        iElement.classList.remove("fa-folder-open");
+        iElement.classList.add("fa-folder");
     } else {
-        toggleButton.textContent = "Rozwiń wszystkie";
+        toggleText.textContent = "Rozwiń wszystkie";
+        iElement.classList.remove("fa-folder");
+        iElement.classList.add("fa-folder-open");
     }
 }
+
+
 // Potrzebne zmienne
 var contextMenu = document.getElementById("context-menu");
 var treeNodes = document.querySelectorAll(".tree-node");
@@ -110,7 +117,7 @@ function handleDragStart(event) {
     var nodeId = event.target.getAttribute("data-node-id");
 
     // Ustaw dane przeciągane (w tym przypadku identyfikator węzła)
-    event.dataTransfer.setData("text/plain", nodeId);
+    event.dataTransfer.setData("text/plain", nodeId); //Tekst prosty
 }
 
 // Dodaj obsługę zdarzenia dragstart dla elementów <span class="tree-node">

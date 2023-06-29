@@ -4,7 +4,6 @@ using Struktura_drzewiasta.Context;
 using Struktura_drzewiasta.Dtos;
 using Struktura_drzewiasta.Exceptions;
 using Struktura_drzewiasta.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -41,21 +40,33 @@ namespace Struktura_drzewiasta.Services
         }
 
         public async Task UpdateTreeNode(TreeNodeDto editedNode)
-        {           
+        {
+            // Węzeł edytowany
             var nodeAfterChanges = _mapper.Map<TreeNodeDto, TreeNode>(editedNode);
             // Obecny stan w bazie danych dla edytowanego węzła
             var nodeBeforeChanges = await _dbContext.TreeNodes.FindAsync(editedNode.Id);
+
             // Zabezpieczenie przed edycją korzenia
-            if(nodeBeforeChanges.ParentId == null)
+            if (nodeBeforeChanges.Name.ToLower() == "root")
+            {
+                throw new MessageException("Nie można zmieniać nazwy i rodzica dla węzła głównego.");
+            }
+
+            // Zabezpieczenie przed edycją korzenia
+            if (nodeBeforeChanges.ParentId == null)
             {
                 throw new MessageException("Nie można utworzyć węzła głównego.");
             }
+
+            //Zabezpiecznie przed duplikowaniem nazwy na danym poziomie drzewa
             if (await IsNodeNameUniqueForParent((int)nodeBeforeChanges.ParentId, nodeAfterChanges.Name))
             {
                 throw new MessageException("Nie można utworzyć węzła o podanej nazwie na danym poziomie.");
             }
+
             // Pobranie obecnego rodzica z bazy danych na podstawie identyfikatora rodzica
             var nodesParentBeforeChanges = await _dbContext.TreeNodes.FindAsync(nodeBeforeChanges.ParentId);
+
             // Czy nie robimy odwołania do samego siebie
             if (nodeAfterChanges.ParentId != nodeBeforeChanges.ParentId)
             {
@@ -63,7 +74,7 @@ namespace Struktura_drzewiasta.Services
                 var nodesParentAfterChanges = await _dbContext.TreeNodes.FindAsync(nodeAfterChanges.ParentId);
 
                 if (nodesParentAfterChanges != null && nodesParentAfterChanges.Id != nodeAfterChanges.Id) // Dodano warunek sprawdzający, czy nowy rodzic nie jest samym sobą i czy istnieje
-                {                
+                {
                     // Jeżeli nowy rodzic jest rodzicem dla obecnego węzła, zamień miejscami rodzica z dzieckiem
                     if (nodeAfterChanges.Id == nodesParentAfterChanges.ParentId) // Jeżeli id rodzica jest parentId dziecka
                     {
@@ -72,13 +83,13 @@ namespace Struktura_drzewiasta.Services
 
                         foreach (var child in childrenBeforeChanges)
                         {
-                        child.ParentId = nodeBeforeChanges.Id;
-                        _dbContext.TreeNodes.Update(child);
+                            child.ParentId = nodeBeforeChanges.Id;
+                            _dbContext.TreeNodes.Update(child);
                         }
 
                         // Zamień miejscami rodzica oraz dziecko i przypisz byłego rodzica-rodzica do dziecka
                         nodesParentAfterChanges.ParentId = nodeBeforeChanges.ParentId;
-                        _dbContext.Entry(nodeBeforeChanges).State = EntityState.Detached;
+                        _dbContext.Entry(nodeBeforeChanges).State = EntityState.Detached; // "Wyrzucenie z DbContext" aby nie było błędu z wystepowaniem obiektu o tym samym Id
                         _dbContext.TreeNodes.Update(nodesParentAfterChanges);
                         _dbContext.TreeNodes.Update(nodeAfterChanges);
                         await _dbContext.SaveChangesAsync();
@@ -87,7 +98,7 @@ namespace Struktura_drzewiasta.Services
                 }
                 else
                 {
-                    // Jeśli próbujemy dodać węzeł jako swojego własnego rodzica, zatrzymaj aktualizację
+                    // Jeśli próbujemy dodać węzeł jako swojego własnego rodzica, zatrzymaj aktualizację i wyrzuć wyjątek
                     throw new MessageException("Nie można być rodzicem dla samego siebie.");
                 }
             }
@@ -97,9 +108,10 @@ namespace Struktura_drzewiasta.Services
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task DeleteTreeNode(int id) 
+        public async Task DeleteTreeNode(int id)
         {
             var treeNode = await _dbContext.TreeNodes.FindAsync(id);
+
             if (treeNode != null)
             {
                 await DeleteChildNodes(treeNode);
@@ -159,6 +171,7 @@ namespace Struktura_drzewiasta.Services
         public async Task MoveTreeNode(int nodeId, int? newParentId) //Przenieś węzeł
         {
             var treeNode = await _dbContext.TreeNodes.FindAsync(nodeId);
+
             if (treeNode != null)
             {
                 treeNode.ParentId = newParentId;

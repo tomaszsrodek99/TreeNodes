@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Logging;
 using Struktura_drzewiasta.Dtos;
 using Struktura_drzewiasta.Exceptions;
 using Struktura_drzewiasta.Extensions;
@@ -10,10 +9,6 @@ using Struktura_drzewiasta.Models;
 using Struktura_drzewiasta.Services;
 using Struktura_drzewiasta.Validator;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Struktura_drzewiasta.Controllers
@@ -71,13 +66,14 @@ namespace Struktura_drzewiasta.Controllers
         public async Task<IActionResult> CreateFromContextMenu(int parentId, string nodeName) // Tworzenie z context menu
         {
             var validator = new TreeNodeValidator(_treeNodeService); // Tworzenie instancji do walidacji
+
             var treeNodeDto = new TreeNodeDto()
             {
                 Name = nodeName,
                 ParentId = parentId
             };
-            var validationResult = await validator.ValidateAsync(treeNodeDto);
 
+            var validationResult = await validator.ValidateAsync(treeNodeDto);
             try
             {
                 if (!validationResult.IsValid)
@@ -110,6 +106,7 @@ namespace Struktura_drzewiasta.Controllers
             var validator = new TreeNodeValidator(_treeNodeService);
 
             var validationResult = await validator.ValidateAsync(treeNodeDto);
+
             try
             {
                 if (validationResult.IsValid)
@@ -117,7 +114,6 @@ namespace Struktura_drzewiasta.Controllers
                     var treeNode = _mapper.Map<TreeNodeDto, TreeNode>(treeNodeDto);
 
                     await _treeNodeService.AddTreeNode(treeNode);
-
                     return RedirectToAction("Index");
                 }
                 else
@@ -144,20 +140,20 @@ namespace Struktura_drzewiasta.Controllers
             try
             {
                 var parentsList = _treeNodeService.GetAllTreeNodesSync(); // Problem przy pobieraniu asynchronicznym: Unable to cast object of type
-                var currentTreeNode = await _treeNodeService.GetTreeNodeById(id); 
-                var model = _mapper.Map<TreeNode, TreeNodeDto>(currentTreeNode); 
+                var currentTreeNode = await _treeNodeService.GetTreeNodeById(id);
+                var model = _mapper.Map<TreeNode, TreeNodeDto>(currentTreeNode);
 
                 ViewBag.ParentsList = new SelectList(parentsList, "Id", "Name"); // Utwórz SelectList dla listy rodziców
 
                 if (message != null)
-                    ModelState.AddModelError("ParentId", message); 
+                    ModelState.AddModelError("ParentId", message);
 
-                return View(model); 
+                return View(model);
             }
             catch (Exception e)
             {
-                ViewBag.ErrorMessage = e.Message; 
-                return View("Error"); 
+                ViewBag.ErrorMessage = e.Message;
+                return View("Error");
             }
         }
 
@@ -197,6 +193,7 @@ namespace Struktura_drzewiasta.Controllers
         {
             // Ustawiamy flagę true/false aby raz odwracać, a potem przywracać sortowanie do stanu początkowego
             bool reverseDirection = HttpContext.Session.GetBool("ReverseDirection");
+
             switch (reverseDirection)
             {
                 case false:

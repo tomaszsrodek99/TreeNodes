@@ -1,5 +1,19 @@
-﻿.tree {
-    margin-top: 15px;
+﻿.tree-container {
+    padding: 10px;
+    margin-top: 55px;
+    background: linear-gradient(to right, #5aa6fb, #1c5ed8);
+    border-radius: 10px;
+    transform: rotate(2deg);
+}
+
+.tree {
+    border-radius: 10px;
+    transform: rotate(-2deg);
+    background-color: white;
+}
+
+.tree h2 {
+    padding: 15px 0 15px 20px;
 }
 
 container {
@@ -15,10 +29,14 @@ container {
 .tree ul {
     background: white;
     padding-top: 1px;
+    padding-bottom: 5px;
 }
 
 ul.custom-list {
     list-style-type: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 0px;
 }
 
 .tree-node {
@@ -50,7 +68,6 @@ ul.custom-list {
 .context-menu-item :last-child {
     border-bottom: none;
 }
-
 .context-menu-item:hover {
     background-color: grey;
     cursor: pointer;
@@ -61,13 +78,26 @@ ul.custom-list {
     color: #333;
 }
 
-.button-container button, .my-button {
-    background-color: #1b2029;
-    color: white;
-    padding: 2px;
-    border-radius: 10px;
+.button-container {
+    padding: 0 0 15px 20px;
 }
 
+.button-container button {
+    background-color: #1b2029;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.btn:hover {
+    color: lawngreen;
+}
+
+.button-container i {
+    padding-right: 10px;
+    padding-left: 5px;
+}
 .collapsed ul {
     display: none;
 }
@@ -79,6 +109,3 @@ ul.custom-list {
 .tree-node.drag-over {
     border: 2px dashed blue;
 }
-
-
-
