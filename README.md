@@ -10,14 +10,14 @@ Aby uruchomić tę aplikację, postępuj zgodnie z poniższymi krokami:
 4. W Konsoli Menedżera Pakietów wpisz następujące polecenie i naciśnij Enter, aby zainstalować wymagane paczki NuGet: dotnet restore
 
 Jeśli wciąż brakuje jakiegoś pakietu, użyj poniższej listy paczek i zainstaluj je ręcznie za pomocą Konsoli Menedżera Pakietów:
-AutoMapper
-AutoMapper.Extensions.Microsoft.DependencyInjection
-FluentValidation
-FluentValidation.DependencyInjectionExtensions
-Microsoft.EntityFrameworkCore (wersja 5.0.17)
-Microsoft.EntityFrameworkCore.Design (wersja 5.0.17)
-Microsoft.EntityFrameworkCore.SqlServer (wersja 5.0.17)
-Microsoft.EntityFrameworkCore.Tools (wersja 5.0.17)
+1. AutoMapper
+2. AutoMapper.Extensions.Microsoft.DependencyInjection
+3. FluentValidation
+4. FluentValidation.DependencyInjectionExtensions
+5. Microsoft.EntityFrameworkCore (wersja 5.0.17)
+6. Microsoft.EntityFrameworkCore.Design (wersja 5.0.17)
+7. Microsoft.EntityFrameworkCore.SqlServer (wersja 5.0.17)
+8. Microsoft.EntityFrameworkCore.Tools (wersja 5.0.17)
 
 Na przykład, aby zainstalować paczkę AutoMapper, wpisz w Konsoli Menedżera Pakietów: Install-Package AutoMapper. Możesz to zrobić również, wybierając menu "Tools" (Narzędzia) > "NuGet Package Manager" (Menedżer pakietów NuGet) > (Zarządzaj pakietami NuGet).
 
