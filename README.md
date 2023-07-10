@@ -5,9 +5,10 @@
 Aby uruchomić tę aplikację, postępuj zgodnie z poniższymi krokami:
 
 1. Pobierz pliki źródłowe aplikacji i umieść je w jednym folderze na swoim komputerze.
-2. Otwórz plik solucji (plik o rozszerzeniu .sln) w programie Visual Studio.
-3. Przejdź do Konsoli Menedżera Pakietów (Package Manager Console) w programie Visual Studio. Możesz to zrobić, wybierając menu "Tools" (Narzędzia) > "NuGet Package Manager" (Menedżer pakietów NuGet) > "Package Manager Console" (Konsola Menedżera Pakietów).
-4. W Konsoli Menedżera Pakietów wpisz następujące polecenie i naciśnij Enter, aby zainstalować wymagane paczki NuGet: dotnet restore
+2. Otwórz plik solucji (plik o rozszerzeniu .sln) w programie Visual Studio. W tym momencie po uruchomieniu projektu powinien działać,
+jeżeli nie:
+4. Przejdź do Konsoli Menedżera Pakietów (Package Manager Console) w programie Visual Studio. Możesz to zrobić, wybierając menu "Tools" (Narzędzia) > "NuGet Package Manager" (Menedżer pakietów NuGet) > "Package Manager Console" (Konsola Menedżera Pakietów).
+5. W Konsoli Menedżera Pakietów wpisz następujące polecenie i naciśnij Enter, aby zainstalować wymagane paczki NuGet: dotnet restore
 
 Jeśli wciąż brakuje jakiegoś pakietu, użyj poniższej listy paczek i zainstaluj je ręcznie za pomocą Konsoli Menedżera Pakietów:
 1. AutoMapper
